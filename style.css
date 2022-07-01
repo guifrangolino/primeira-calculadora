@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    background: url(background.jpg);
+    background-position: center left;
+    min-height: 100vh;
+    width: 100vw;
+    color: white;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main > h1 {
+    justify-self: start;
+}
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,83,97);
+    background: linear-gradient(0deg, rgba(0,83,97,1) 0%, rgba(0,91,109,1) 20%, rgba(0,71,109,1) 100%);
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 6px 6px 0px 0px black;    
+    max-width: 420px;
+    margin: 25px 0;
+}
+
+.calculadora > h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 15px 0 20px 0;
+    text-shadow: 3px 3px 0px black;
+}
+
+.calculadora span {
+    color: black;
+    /* max-width: 400px; */
+    width: 100%;
+    min-height: 60px;
+    background: white;
+    padding: 0 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: end;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 0px 0px black;
+    word-wrap: break-word
+}
+
+.calculadora table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 0px 0px black;
+    background: black;
+}
+
+.botao {
+    border: 1px solid black;
+    width: 100px;
+    height: 80px;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #808080;
+    transform: translate(-2px, -2px);
+    cursor: pointer;
+}
+
+.ovelhaNegra {
+    width: 200px;
+}
+
+.botao:hover {
+    background-color: #707070;
+}
+
+.botao:active {
+    transform: none;
+}
+
+.op {
+    background: rgb(0,83,97);
+    background: linear-gradient(0deg, rgba(0,83,97,1) 0%, rgba(0,91,109,1) 20%, rgba(0,71,109,1) 100%);
+}
+
+.op:hover {
+    background: rgb(0, 69, 82);
+    background: linear-gradient(0deg, rgb(0, 68, 80) 0%, rgb(0, 81, 97) 20%, rgb(0, 60, 92) 100%);
+}
+
+@media (max-width: 480px) {
+    main > h1 {
+        margin-top: 25px;
+        font-size: 1.6rem;
+    }
+
+    .calculadora > h1 {
+        font-size: 1.3rem;
+    }
+    
+    .calculadora {
+        width: 320px;
+    }
+
+    .calculadora table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .botao {
+        width: 75px;
+        height: 80px;
+        font-size: 2rem;
+    }
+
+    .ovelhaNegra {
+        width: 150px;
+    }
+}

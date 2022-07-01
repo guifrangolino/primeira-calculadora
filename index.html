@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fa0fab811a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <h1>Calculadora Simples</h1>
+        <div class="calculadora">
+            <h1>Guilherminho Calculators</h1>
+            <span id="resultado"></span>
+            <table>
+                <tr>
+                    <td><button class="botao limpar">C</button></td>
+                    <td><button class="botao apagar"><i class="fas fa-backspace"></i></i></button></td>
+                    <td><button class="botao op btnDisplay">/</button></td>
+                    <td><button class="botao op btnDisplay">*</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao btnDisplay">7</button></td>
+                    <td><button class="botao btnDisplay">8</button></td>
+                    <td><button class="botao btnDisplay">9</button></td>
+                    <td><button class="botao op btnDisplay">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao btnDisplay">4</button></td>
+                    <td><button class="botao btnDisplay">5</button></td>
+                    <td><button class="botao btnDisplay">6</button></td>
+                    <td><button class="botao op btnDisplay">+</button></td>
+                </tr>
+       
+                <tr>
+                    <td><button class="botao btnDisplay">1</button></td>
+                    <td><button class="botao btnDisplay">2</button></td>
+                    <td><button class="botao btnDisplay">3</button></td>
+                    <td rowspan="2"><button class="botao calc op" style="height: 160px;">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botao btnDisplay ovelhaNegra">0</button></td>
+                    <td><button class="botao btnDisplay">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
